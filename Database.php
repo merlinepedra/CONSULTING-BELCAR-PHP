@@ -3,21 +3,23 @@
 class Database 
 {
 
-    private $movies = [
+    private $users = [
         [
             'id' => 1,
-            'title' => 'A ghost story',
-            'image' => 'http://www.elespectadorimaginario.com/wp-content/webpc-passthru.php?src=http://www.elespectadorimaginario.com/wp-content/uploads/cartel-de-a-ghost-history.jpg&nocache=1'
+            'date' => '16/10/21',
+            'name' => 'Maria',
+            'issue' => 'I dont understand PHP',
         ],
         [
             'id' => 2,
-            'title' => 'In the mood for love',
-            'image' => 'https://i.pinimg.com/564x/82/bb/e4/82bbe4de049fe4a5b1ddd55c627f7bee.jpg'
+            'date' => '17/10/21',
+            'name' => 'Jose',
+            'issue' => 'I cant make tests',
         ]
         ];
 
     public function getAll() {
-        return $this->movies;
+        return $this->users;
     }
 }
 ?>
