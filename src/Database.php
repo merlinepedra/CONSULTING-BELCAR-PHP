@@ -8,7 +8,7 @@ class Database
             'id' => 1,
             'date' => '16/10/21',
             'name' => 'Maria',
-            'issue' => 'I dont understand PHP',
+            'issue' => 'I dont understand maldito PHP',
         ],
         [
             'id' => 2,

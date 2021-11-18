@@ -34,7 +34,7 @@
     <tbody>    
 
         <?php
-        require_once 'User.php';
+        require_once __DIR__ .'/../src/User.php';
         $users = (new User())->all();
 
 foreach ($users as $user) {

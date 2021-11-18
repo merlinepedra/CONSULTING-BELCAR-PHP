@@ -1,5 +1,5 @@
 <?php
-require_once 'Database.php';
+require_once __DIR__.'/../src/Database.php';
 
 class User {
     public $id;
