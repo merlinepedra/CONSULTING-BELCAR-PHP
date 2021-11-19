@@ -1,0 +1,17 @@
+{
+    "name": "ceciliacarbajal/consulting",
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ceciliacarbajal\\Consulting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ceci",
+            "email": "carbel.cecilia@gmail.com"
+        }
+    ]
+}
