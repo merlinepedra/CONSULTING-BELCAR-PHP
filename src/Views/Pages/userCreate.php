@@ -19,7 +19,8 @@ require_once __DIR__ .'/../Layouts/Default.php'; ?>
 
         <div class="mb-3">
           <label for="" class="form-label">Issue</label>
-          <input type="" class="form-control" name="issue" id="issue" aria-describedby="issueHelpId" placeholder="How can we help you? ">
+          <input required type="text"
+            class="form-control" name="issue" id="issue" aria-describedby="issueHelpId" placeholder="How can we help you? ">
           
         </div>
 

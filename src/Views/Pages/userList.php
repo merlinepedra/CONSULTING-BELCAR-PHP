@@ -36,10 +36,14 @@ foreach ($users as $user) {
 <td>{$user->date}</td>
 <td>{$user->name}</td>
 <td>{$user->issue}</td>
+<td>               
+    <a href=''><i class='lnr lnr-pencil'></i></a>
+    <a href=''><i class='lnr lnr-trash'></i></a>
+</td>
 </tr>    
     ";
 }
-    ?>
+?>
     </tbody>
 </table>
     </div>
