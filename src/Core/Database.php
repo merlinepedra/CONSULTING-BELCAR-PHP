@@ -1,7 +1,8 @@
 <?php
 namespace App\Core;
 
-class Database 
+
+class Database  implements IUserRepository
 {
 
     private $users = [

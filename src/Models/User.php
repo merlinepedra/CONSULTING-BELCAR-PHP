@@ -1,13 +1,14 @@
 <?php
 namespace App\Models;
 use App\Core\Database;
-
+use App\Core\SQLUserRepository;
 class User {
     public $id;
     public $date;
     public $name;
     public $issue;
     private $db;
+    
     public function __construct($data = null)
      {
          if ($data) {
@@ -16,7 +17,7 @@ class User {
         $this->name = $data['name'];
         $this->issue = $data['issue'];
     }
-    $this->db = new Database();
+    $this->db = new SQLUserRepository();
      }
         public function all(){
             $usersList = [];
