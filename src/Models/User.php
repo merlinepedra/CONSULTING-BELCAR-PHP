@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__.'/../Database.php';
+namespace App\Models;
+use App\Core\Database;
 
 class User {
     public $id;

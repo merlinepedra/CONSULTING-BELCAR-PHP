@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ .'/../Models/User.php';
+namespace App\Controllers;
+use App\Models\User;
 
 class UserController {
     public function index(){
