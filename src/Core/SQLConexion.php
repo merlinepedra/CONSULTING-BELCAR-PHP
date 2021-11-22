@@ -7,12 +7,13 @@ use PDOException;
 class SQLConexion {
 
     public $mysql;
-
+    
 	public function __construct()
     {
+        $config = new Config();
         $host = "localhost";
         $user = "root";
-        $pass = "";
+        $pass = "root";
         $database = "users";
         $charset = "utf-8";
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
