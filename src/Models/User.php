@@ -4,8 +4,8 @@ use App\Core\Database;
 use App\Core\IUserRepository;
 use App\Core\SQLUserRepository;
 class User {
-    public $id;
-    public $date;
+    public ?int $id =null;
+    //public $date;
     public $name;
     public $issue;
     private IUserRepository $db;
@@ -13,8 +13,8 @@ class User {
     public function __construct($data = null)
      {
          if ($data) {
-        $this->id = $data['id'];
-        $this->date = $data['date'];
+        $this->id = isset($data['id'])? $data['id'] : null;
+       // $this->date = $data['date'];
         $this->name = $data['name'];
         $this->issue = $data['issue'];
     }
@@ -28,4 +28,7 @@ class User {
             return $usersList;
     }
    
+    public function save() {
+        echo 'me guardo';
+    }
 }

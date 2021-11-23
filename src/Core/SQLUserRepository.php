@@ -17,4 +17,8 @@ class SQLUserRepository implements IUserRepository {
         $result=$query->fetchAll();
         return $result;
     }
+
+    function save() {
+        echo 'save in db';
+    }
 }

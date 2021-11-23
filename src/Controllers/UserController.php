@@ -11,4 +11,9 @@ class UserController {
 
         require_once __DIR__ .'/../Views/Pages/userCreate.php'; 
     }
+
+    public function store($request) {
+        $userToSave = new User ($request);
+        $userToSave->save();
+    }
 };
