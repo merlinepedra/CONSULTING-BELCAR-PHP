@@ -1,13 +1,14 @@
 <?php
 namespace App\Models;
 use App\Core\Database;
+use App\Core\IUserRepository;
 use App\Core\SQLUserRepository;
 class User {
     public $id;
     public $date;
     public $name;
     public $issue;
-    private $db;
+    private IUserRepository $db;
     
     public function __construct($data = null)
      {

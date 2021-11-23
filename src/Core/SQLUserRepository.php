@@ -4,9 +4,16 @@ namespace App\Core;
 class SQLUserRepository implements IUserRepository {
 
     private $table="users";
+    private $conexion;
+
+    function __construct()
+    {
+        $this->conexion = (new SQLConexion())->mysql;
+    }
+
      function getAll(){
-        $db = (new SQLConexion())->mysql;
-        $query = $db->query("select * FROM {$this->table}");
+       
+        $query = $this->conexion->query("select * FROM {$this->table}");
         $result=$query->fetchAll();
         return $result;
     }
