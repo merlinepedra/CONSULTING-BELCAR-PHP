@@ -15,7 +15,7 @@ class User {
          if ($data) {
         $this->id = isset($data['id'])? $data['id'] : null;
        // $this->date = $data['date'];
-        $this->name = $data['name'];
+        $this->name = $data['nombre'];
         $this->issue = $data['issue'];
     }
     $this->db = new SQLUserRepository();
@@ -29,6 +29,6 @@ class User {
     }
    
     public function save() {
-        echo 'me guardo';
+        $this->db->save($this->name, $this->issue);
     }
 }

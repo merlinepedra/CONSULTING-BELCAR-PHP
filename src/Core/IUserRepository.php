@@ -3,5 +3,5 @@ namespace App\Core;
 
 interface IUserRepository{
     function getAll();
-    function save();
+    function save($name, $issue);
 }

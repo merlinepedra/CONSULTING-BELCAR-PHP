@@ -18,7 +18,8 @@ class SQLUserRepository implements IUserRepository {
         return $result;
     }
 
-    function save() {
-        echo 'save in db';
+    function save($name, $issue) {
+        $this->conexion->query("INSERT INTO `{$this->table}` (`name`, `issue`) VALUES('Estefany Lopez','Nueva prueba 13')");
+        
     }
 }
