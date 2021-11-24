@@ -15,5 +15,12 @@ class UserController {
     public function store($request) {
         $userToSave = new User ($request);
         $userToSave->save();
+        $this->redirect('/');
+        
+    }
+
+    private function redirect(string $url) {
+        header("Location: {$url}");
     }
 };
+

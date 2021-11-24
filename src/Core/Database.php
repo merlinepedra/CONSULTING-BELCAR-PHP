@@ -2,7 +2,7 @@
 namespace App\Core;
 
 
-class Database  implements IUserRepository
+/*class Database  implements IUserRepository
 {
 
     private $users = [
@@ -23,5 +23,5 @@ class Database  implements IUserRepository
     public function getAll() {
         return $this->users;
     }
-}
+}*/
 ?>

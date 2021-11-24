@@ -11,9 +11,9 @@ require_once __DIR__ .'/../Layouts/Default.php'; ?>
         <form action="/users" method="post">
 
         <div class="mb-3">
-          <label for="nombre" class="form-label">Name</label>
+          <label for="name" class="form-label">Name</label>
           <input required type="text"
-            class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Coder name">
+            class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Coder name">
           
         </div>
 

@@ -15,13 +15,13 @@ $uri = $_SERVER["REQUEST_URI"];
 
 
 
-/*
+
 if ($uri == '/users' || $uri == '/'){
     
 
     $controller -> index();
 }
-*/
+
 
 if ($uri == '/users/create'){
     $controller -> create();

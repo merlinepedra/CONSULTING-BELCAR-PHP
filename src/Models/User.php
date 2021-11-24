@@ -5,7 +5,7 @@ use App\Core\IUserRepository;
 use App\Core\SQLUserRepository;
 class User {
     public ?int $id =null;
-    //public $date;
+    public $date;
     public $name;
     public $issue;
     private IUserRepository $db;
@@ -14,8 +14,8 @@ class User {
      {
          if ($data) {
         $this->id = isset($data['id'])? $data['id'] : null;
-       // $this->date = $data['date'];
-        $this->name = $data['nombre'];
+        $this->date = $data['date'];
+        $this->name = $data['name'];
         $this->issue = $data['issue'];
     }
     $this->db = new SQLUserRepository();
