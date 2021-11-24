@@ -31,4 +31,8 @@ class User {
     public function save() {
         $this->db->save($this->name, $this->issue);
     }
+
+    public function delete(){
+        $this->db->delete($this->name, $this->issue);
+    }
 }

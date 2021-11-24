@@ -26,7 +26,7 @@ require_once __DIR__ .'/../Layouts/Default.php'; ?>
 
         <input name="" id="" class="btn btn-success" type="submit" value="Send">
 
-        <a href="?controlador=empleados&accion=inicio" class="btn btn-primary">Cancel</a>
+        <a href="/" class="btn btn-primary">Cancel</a>
         </form>
     </div>
     

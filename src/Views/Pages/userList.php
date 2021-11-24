@@ -8,7 +8,7 @@
         
     <div class="card">
     <div class="card-header">
-        <a name="" id="" class="btn btn-success" role="button">Add Wathever</a>
+        <a href="/users/create" name="" id="" class="btn btn-success" role="button">Add Wathever</a>
 
     </div>
     <div class="card-body">
