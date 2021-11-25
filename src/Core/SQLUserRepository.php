@@ -11,8 +11,8 @@ class SQLUserRepository implements IUserRepository {
         $this->conexion = (new SQLConexion())->mysql;
     }
 
-     function getAll(){
-       
+    function getAll()
+    {
         $query = $this->conexion->query("select * FROM {$this->table}");
         $result=$query->fetchAll();
         return $result;
@@ -20,6 +20,10 @@ class SQLUserRepository implements IUserRepository {
 
     function save($name, $issue) {
         $this->conexion->query("INSERT INTO `{$this->table}` (`name`, `issue`) VALUES('{$name}','{$issue}')");
-        
     }
+
+    function delete($id) {
+        $this->conexion->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$id}");
+    }
+    
 }

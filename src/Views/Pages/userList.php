@@ -24,25 +24,22 @@
         </tr>
     </thead>
     <tbody>    
-
         <?php
-        
-
-foreach ($users as $user) {
- echo "
-<tr>
-<td>{$user->id}</td>
-<td>{$user->date}</td>
-<td>{$user->name}</td>
-<td>{$user->issue}</td>
-<td>               
-    <a href=''><i class='lnr lnr-pencil'></i></a>
-    <a href=''><i class='lnr lnr-trash'></i></a>
-</td>
-</tr>    
-    ";
-}
-?>
+            foreach ($users as $user) {
+                echo "
+                <tr>
+                <td>{$user->id}</td>
+                <td>{$user->date}</td>
+                <td>{$user->name}</td>
+                <td>{$user->issue}</td>
+                <td>               
+                    <a href='/users/create?'><i class='lnr lnr-pencil'></i></a>
+                    <a href='/?action=delete&id={$user->id}'><i class='lnr lnr-trash'></i></a>
+                </td>
+                </tr>    
+                    ";
+            }
+        ?>
     </tbody>
 </table>
     </div>

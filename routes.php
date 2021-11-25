@@ -1,28 +1,28 @@
 <?php
 namespace App;
 use App\Controllers\UserController;
-use App\Core\SQLConexion;
 
-//var_dump($_POST);
+// var_dump($_GET['action']);
 
 $controller = new UserController();
-if ($_POST) {
-    $controller-> store($_POST);
-}
-
 $uri = $_SERVER["REQUEST_URI"];
 
-
-
-
-
-if ($uri == '/users' || $uri == '/'){
-    
-
-    $controller -> index();
+if ($_POST) {
+    $controller->save($_POST);
 }
 
+if ($uri == '/users' || $uri == '/'){
+    $controller->index();
+}
 
 if ($uri == '/users/create'){
-    $controller -> create();
+    $controller->showCreatePage();
+}
+
+if ($_GET) {
+    $action = isset($_GET['action']) ? $_GET['action'] : null;
+    
+    if ($action == 'delete' && isset($_GET['id'])) {
+        $controller->delete($_GET);
+    }
 }
