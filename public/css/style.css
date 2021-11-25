@@ -1,3 +1,28 @@
 body {
-  background-color: #E5DBD1;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+
+}
+
+h1 {
+  margin-top: 2px;
+  margin-bottom: 0.5rem;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-family: verdana;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.navbar {
+  background-color: #b9e6eeea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
 }

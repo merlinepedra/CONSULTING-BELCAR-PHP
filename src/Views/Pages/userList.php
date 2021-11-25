@@ -3,7 +3,6 @@
 <?php require_once __DIR__ .'/../Layouts/Default.php';?>
 
 <body>
-    <h1>THE CODERS OFFICE</h1>
     <section class='row justify-content-center'>
         
     <div class="card">
