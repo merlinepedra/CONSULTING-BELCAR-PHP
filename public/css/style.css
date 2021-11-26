@@ -1,5 +1,14 @@
 body {
-  background-image: url ("./image/backimage.jpg");
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: #1d5b99;
+  text-align: var(--bs-body-text-align);
+  background-image: url("./../image/backimage.jpg");
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1 {
@@ -16,7 +25,8 @@ h1 {
 }
 
 .navbar {
-  background-color: #b9e6eeea;
+  background-color: #91B6FF;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,4 +34,19 @@ h1 {
 
 .logo {
   display: flex;
+  width: 5%;
 }
+.bg-img{
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+  width: 50%;
+
+}
+.card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-image: url('./../image/backimage.jpg');
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
