@@ -7,7 +7,7 @@
         
     <div class="card">
     <div class="card-header">
-        <a href="/users/create" name="" id="" class="btn btn-success" role="button">Add Wathever</a>
+        <a href="/users/create" name="" id="" class="btn btn-primary" role="button">Schedule an appointment</a>
 
     </div>
     <div class="card-body">
