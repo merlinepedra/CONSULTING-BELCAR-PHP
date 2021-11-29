@@ -19,10 +19,23 @@ if ($uri == '/users/create'){
     $controller->showCreatePage();
 }
 
+if ($uri == '/users/edit'){
+    $controller->showEditPage();
+}
+
 if ($_GET) {
     $action = isset($_GET['action']) ? $_GET['action'] : null;
     
     if ($action == 'delete' && isset($_GET['id'])) {
         $controller->delete($_GET);
     }
+
+if ($_GET) {
+    $action = isset($_GET['action']) ? $_GET['action'] : null;
+    
+    if ($action == 'edit' && isset($_GET['id'])) {
+        $controller->edit($_GET);
+    }
 }
+}
+

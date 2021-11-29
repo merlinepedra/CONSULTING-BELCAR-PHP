@@ -25,5 +25,9 @@ class SQLUserRepository implements IUserRepository {
     function delete($id) {
         $this->conexion->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$id}");
     }
+
+    function edit($id, $name, $issue){
+        $this->conexion->query("UPDATE `{$this->table}` SET `name` = '{$name}', `issue` = '{$issue}' WHERE `id`= '{$id}'");
+    }
     
 }

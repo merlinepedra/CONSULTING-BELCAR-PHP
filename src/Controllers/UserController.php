@@ -12,6 +12,10 @@ class UserController {
         require_once __DIR__ .'/../Views/Pages/userCreate.php'; 
     }
 
+    public function showEditPage(){
+        require_once __DIR__ .'/../Views/Pages/userEdit.php';
+    }
+
     public function save($request) {
         $userToSave = new User($request);
         $userToSave->save();
@@ -24,8 +28,14 @@ class UserController {
         $this->redirect('/'); 
     }
 
+    public function edit($request) {
+        $userToEdit = new User($request);
+        $userToEdit->edit();
+        $this->redirect('/');
+    }
     private function redirect(string $url) {
         header("Location: {$url}");
     }
 };
+
 

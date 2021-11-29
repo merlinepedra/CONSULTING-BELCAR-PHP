@@ -36,4 +36,8 @@ class User {
     public function delete() {
         $this->db->delete($this->id);
     }
+
+    public function edit() {
+        $this->db->edit($this->id, $this->name, $this->issue);
+    }
 }
