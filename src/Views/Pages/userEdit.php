@@ -9,13 +9,6 @@ require_once __DIR__ .'/../Layouts/Default.php';?>
     <div class="card-body">
         
         <form action="/users" method="post">
-       
-        <div class="mb-3">
-          <label for="id" class="form-label">ID:</label>
-          <input readonly type="text"
-            class="form-control" value="" name="id" id="id" aria-describedby="helpId" placeholder="ID coder">
-         
-        </div>
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input required type="text"
@@ -30,7 +23,7 @@ require_once __DIR__ .'/../Layouts/Default.php';?>
             
           </div>
 
-          <input name="" id="" class="btn btn-success" type="submit" value="Send">
+          <input name="" id="" class="btn btn-success" type="submit" value="Edit">
 
           <a href="/" class="btn btn-primary">Cancel</a>
         </form>

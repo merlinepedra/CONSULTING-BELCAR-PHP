@@ -30,12 +30,14 @@ if ($_GET) {
         $controller->delete($_GET);
     }
 
-if ($_GET) {
-    $action = isset($_GET['action']) ? $_GET['action'] : null;
-    
-    if ($action == 'edit' && isset($_GET['id'])) {
-        $controller->edit($_GET);
-    }
-}
+
+  if ($_POST) {
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $issue = $_POST['issue'];
+
+   $controller->edit($id, $name, $issue);
+ }
+        
 }
 
