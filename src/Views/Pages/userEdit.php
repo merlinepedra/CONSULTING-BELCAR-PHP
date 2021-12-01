@@ -8,7 +8,7 @@ require_once __DIR__ .'/../Layouts/Default.php';?>
     </div>
     <div class="card-body">
         
-        <form action="/users" method="post">
+        <form action="/edit" method="post">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input required type="text"

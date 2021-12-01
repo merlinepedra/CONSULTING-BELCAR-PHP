@@ -36,7 +36,7 @@
                 <td>{$user->name}</td>
                 <td>{$user->issue}</td>
                 <td>               
-                    <a href='/users/edit'><i class='lnr lnr-pencil'></i></a>
+                    <a href='/users/edit&id={$user->id}'><i class='lnr lnr-pencil'></i></a>
                     <a href='/?action=delete&id={$user->id}'><i class='lnr lnr-trash'></i></a>
                 </td>
                 </tr>    

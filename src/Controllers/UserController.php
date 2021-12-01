@@ -28,10 +28,14 @@ class UserController {
         $this->redirect('/'); 
     }
 
-    public function edit($request) {
-        $userToEdit = new User($request);
+    public function edit($id) {
+        $userToEdit = new User($id);
         $userToEdit->edit();
         $this->redirect('/');
+    }
+    public function update($request, $id){
+        $userToUpdate = new User($request, $id);
+        $userToUpdate = findById();
     }
     private function redirect(string $url) {
         header("Location: {$url}");

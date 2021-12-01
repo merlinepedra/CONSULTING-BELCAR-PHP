@@ -29,15 +29,19 @@ if ($_GET) {
     if ($action == 'delete' && isset($_GET['id'])) {
         $controller->delete($_GET);
     }
+    if ($action == 'edit' && isset($_GET['id'])) {
+        $controller->edit($_GET);
+    }
 
 
-  if ($_POST) {
+  /*if ($_POST) {
     $id = $_POST['id'];
     $name = $_POST['name'];
     $issue = $_POST['issue'];
 
    $controller->edit($id, $name, $issue);
- }
+ }*/
         
 }
+
 

@@ -6,7 +6,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: #1d5b99;
   text-align: var(--bs-body-text-align);
-  background-image: url("/public/image/Captura01.png");
+  background-image: url(./../image/Captura01.png);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -50,7 +50,7 @@ h1 {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-image: url("/public/image/Captura01.png");
+  background-image: url("./../image/Captura01.png");
   border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
