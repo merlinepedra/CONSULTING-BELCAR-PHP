@@ -93,6 +93,7 @@ Wireframe de la idea principal del proyecto con funcionalidad:
 * Cecilia Carbajal.
 * Abdessamad Belkhialat.
 * Miquel Cruz.
+* Clàudia Calero Duró
 
 ## Gratitud 🎁
 * Comenta a otros sobre este proyecto 📢 .
