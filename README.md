@@ -98,4 +98,4 @@ Wireframe de la idea principal del proyecto con funcionalidad:
 ## Gratitud 🎁
 * Comenta a otros sobre este proyecto 📢 .
 * Apoya nuestros proyectos 🐈‍⬛.
-* Hecho con  ❤️ por @belcar-ceci  @abde7h👻  @SolTuripe👻 @MayuRuru👻  @mcc72👻
+* Hecho con  ❤️ por @belcar-ceci  @abde7h👻  @SolTuripe👻 @MayuRuru👻  @mcc72👻 @ClaudiaCalero👻
