@@ -24,7 +24,7 @@ if ($_GET) {
     if ($action == 'delete' && isset($_GET['id'])) {
         $controller->delete($_GET);
     }
-    if ($action == 'create' && isset($_GET['id'])) {
+    if ($action == 'create') {
         $controller->showCreatePage($_GET);
     }
     if ($action == 'edit' && isset($_GET['id'])) {
