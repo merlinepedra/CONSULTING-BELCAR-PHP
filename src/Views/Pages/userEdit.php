@@ -8,7 +8,7 @@ require_once __DIR__ .'/../Layouts/Default.php';?>
     </div>
     <div class="card-body">
         
-    <form action="/?action=update<?php echo $data["user"]->id ?>" method="post">
+    <form action="/?action=update" method="post">
     
       <div class="mb-3 d-none">
             <input required type="text"
