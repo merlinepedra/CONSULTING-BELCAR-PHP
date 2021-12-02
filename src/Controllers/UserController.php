@@ -1,19 +1,22 @@
 <?php
 namespace App\Controllers;
 use App\Models\User;
+use App\Core\View;
 
 class UserController {
     public function index() {
         $users = (new User())->all();
-        require_once __DIR__ .'/../Views/Pages/userList.php'; 
+        new View("userList", ["users" => $users]);
     }
 
     public function showCreatePage(){
-        require_once __DIR__ .'/../Views/Pages/userCreate.php'; 
+        new View("userCreate");
     }
 
-    public function showEditPage(){
-        require_once __DIR__ .'/../Views/Pages/userEdit.php';
+    public function showEditPage($request){
+        $id = $request["id"];
+        $user = (new User())->findById($id);
+        new View("userEdit", ["user" => $user]);
     }
 
     public function save($request) {
@@ -28,15 +31,12 @@ class UserController {
         $this->redirect('/'); 
     }
 
-    public function edit($id) {
-        $userToEdit = new User($id);
-        $userToEdit->edit();
+    public function update($request) {
+        $userToSave = new User($request);
+        $userToSave->update();
         $this->redirect('/');
     }
-    public function update($request, $id){
-        $userToUpdate = new User($request, $id);
-        $userToUpdate = findById();
-    }
+    
     private function redirect(string $url) {
         header("Location: {$url}");
     }

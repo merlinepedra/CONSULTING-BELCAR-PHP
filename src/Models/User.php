@@ -37,7 +37,12 @@ class User {
         $this->db->delete($this->id);
     }
 
-    public function edit() {
-        $this->db->edit($this->id, $this->name, $this->issue);
+    public function update() {
+        $this->db->update($this->id, $this->name, $this->issue);
+    }
+
+    public function findById($id) {
+        $data = $this->db->findById($id);
+        return new User($data);
     }
 }

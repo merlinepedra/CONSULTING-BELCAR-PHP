@@ -2,25 +2,20 @@
 namespace App;
 use App\Controllers\UserController;
 
-// var_dump($_GET['action']);
 
 $controller = new UserController();
 $uri = $_SERVER["REQUEST_URI"];
 
 if ($_POST) {
-    $controller->save($_POST);
-}
+    $action = isset($_GET['action']) ? $_GET['action'] : null;
 
-if ($uri == '/users' || $uri == '/'){
-    $controller->index();
-}
+    if ($action == 'save') {
+        $controller->save($_POST);
+    }
 
-if ($uri == '/users/create'){
-    $controller->showCreatePage();
-}
-
-if ($uri == '/users/edit'){
-    $controller->showEditPage();
+    if ($action == 'update') {
+        $controller->update($_POST);
+    }
 }
 
 if ($_GET) {
@@ -29,19 +24,15 @@ if ($_GET) {
     if ($action == 'delete' && isset($_GET['id'])) {
         $controller->delete($_GET);
     }
+    if ($action == 'create' && isset($_GET['id'])) {
+        $controller->showCreatePage($_GET);
+    }
     if ($action == 'edit' && isset($_GET['id'])) {
-        $controller->edit($_GET);
+        $controller->showEditPage($_GET);
     }
 
-
-  /*if ($_POST) {
-    $id = $_POST['id'];
-    $name = $_POST['name'];
-    $issue = $_POST['issue'];
-
-   $controller->edit($id, $name, $issue);
- }*/
-        
 }
 
-
+if ($uri == '/users' || $uri == '/'){
+    $controller->index();
+}

@@ -5,5 +5,6 @@ interface IUserRepository{
     function getAll();
     function save($name, $issue);
     function delete($id);
-    function edit($id, $name, $issue);
+    function update($id, $name, $issue);
+    function findById($id);
 }

@@ -10,7 +10,7 @@
     <div class="card">
     <div class="card-header">
         <h2 class="d-flex justify-content-center" style="color:black">You are welcome!</h2>
-        <a href="/users/create" name="" id="" class="btn btn-primary" role="button">Schedule an appointment</a>
+        <a href="/?action=create" name="" id="" class="btn btn-primary" role="button">Schedule an appointment</a>
 
     </div>
     
@@ -28,7 +28,7 @@
     </thead>
     <tbody>    
         <?php
-            foreach ($users as $user) {
+            foreach ($data["users"] as $user) {
                 echo "
                 <tr>
                 <td>{$user->id}</td>
@@ -36,7 +36,7 @@
                 <td>{$user->name}</td>
                 <td>{$user->issue}</td>
                 <td>               
-                    <a href='/users/edit&id={$user->id}'><i class='lnr lnr-pencil'></i></a>
+                    <a href='/?action=edit&id={$user->id}'><i class='lnr lnr-pencil'></i></a>
                     <a href='/?action=delete&id={$user->id}'><i class='lnr lnr-trash'></i></a>
                 </td>
                 </tr>    
