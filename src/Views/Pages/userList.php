@@ -1,6 +1,10 @@
 
 
-<?php require_once __DIR__ .'/../Layouts/Default.php';?>
+<?php
+
+use PHPUnit\Util\Color;
+
+require_once __DIR__ .'/../Layouts/Default.php';?>
 
 <body>
 
@@ -36,8 +40,8 @@
                 <td>{$user->name}</td>
                 <td>{$user->issue}</td>
                 <td>               
-                    <a href='/?action=edit&id={$user->id}'><i class='lnr lnr-pencil'></i></a>
-                    <a href='/?action=delete&id={$user->id}'><i class='lnr lnr-trash'></i></a>
+                    <a href='/?action=edit&id={$user->id}'style='color: coral'><i class='lnr lnr-pencil'></i></a>
+                    <a href='/?action=delete&id={$user->id}'style='color: green'><i class='lnr lnr-trash'></i></a>
                 </td>
                 </tr>    
                     ";

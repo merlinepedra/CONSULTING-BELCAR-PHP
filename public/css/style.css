@@ -1,45 +1,41 @@
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: #1d5b99;
-  text-align: var(--bs-body-text-align);
-  background-image: url(./../image/Captura01.png);
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 
-h1 {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2px;
-  margin-bottom: 0.5rem;
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  
+  background-color: #91B6FF;
+
+
+}
+
+
+
+.title {
+
   color: white;
   -webkit-text-stroke: 1px black;
   font-family: verdana;
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 50px;
+  font-size: 7vw;
+  font-weight: bold;
+  line-height: 100%;
   letter-spacing: 0em;
  
 }
 
-.navbar {
-  background-color: #91B6FF;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .logo {
-  display: flex;
-  width: 5%;
-  /*margin-left: 20%;*/
+
+  width: 7%;
+
 }
+
 .bg-img{
   background-repeat: no-repeat;
   display: flex;
@@ -50,7 +46,7 @@ h1 {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-image: url("./../image/Captura01.png");
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
