@@ -62,15 +62,22 @@ Wireframe de la idea principal del proyecto con funcionalidad:
 
 
 
-## Versión Mobile First 🚀
-<p align="center"> 
-  <img src="./Readme/Mockup/landingpage.png?raw=true" width=100%>
-</p>
-
 ## Versión Desktop 🚀
 <p align="center"> 
-  <img src="./Readme/Mockup/landingpage.png?raw=true" width=100%>
+  <img src="./Readme/Mockup/Landing1.png?raw=true" width=50%>
 </p>
+<p align="center"> 
+  <img src="./Readme/Mockup/Landing2.png?raw=true" width=50%>
+</p>
+<p align="center"> 
+  <img src="./Readme/Mockup/Landing3.png?raw=true" width=50%>
+</p>
+
+## Versión Mobile First 🚀
+<p align="center"> 
+  <img src="./Readme/Mockup/Movilfinal.png?raw=true" width=100%>
+</p>
+
 
 ## Dependencias 🧑 
 
