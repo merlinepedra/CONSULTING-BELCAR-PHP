@@ -60,7 +60,6 @@ Wireframe de la idea principal del proyecto con funcionalidad:
   <img src="./Readme/wireframe/destopk.png?raw=true" width=100%>
 </p>
 
-## Mockup 🚀
 
 
 ## Versión Mobile First 🚀
