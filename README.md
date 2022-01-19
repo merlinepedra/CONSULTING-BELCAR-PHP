@@ -50,7 +50,7 @@ El proyecto "THE CODER'S OFFICE" es una aplicación que permite pedir cita al CT
 These instructions will allow you to get a working copy of the project on your local computer, for development and testing purposes:
 
 ```
-1. Clone git repository: https://github.com/SolTuripe/consulting.git
+1. Clone git repository: https://github.com/belcar-ceci/consulting.git
 2. Create a database in phpMyAdmin with the name: users
 3. Composer install and/or composer update
 4. $ composer require vlucas/phpdotenv (to create the environment variables)
