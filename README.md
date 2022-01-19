@@ -45,12 +45,20 @@ El proyecto "THE CODER'S OFFICE" es una aplicación que permite pedir cita al CT
 
 - La aplicación deberá ser responsiva.
 
-## Comenzando 🚀 
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu ordenador local, para propósitos de desarrollo y pruebas:
+## Starting 🚀
 
-Abre la terminal y ejecuta: git clone https://github.com/crada2/consulting.git para descargar el proyecto, realiza un fork.
+These instructions will allow you to get a working copy of the project on your local computer, for development and testing purposes:
 
-Para desplegar la página en funcionamiento puedes acceder aquí 
+```
+1. Clone git repository: https://github.com/SolTuripe/consulting.git
+2. Create a database in phpMyAdmin with the name: users
+3. Composer install and/or composer update
+4. $ composer require vlucas/phpdotenv (to create the environment variables)
+```
+[For more information about PHP Dotenv, setting in environment variables, click here](https://github.com/vlucas/phpdotenv)
+
+
+[To find the project in production click here](https://crada-consulting.herokuapp.com/)
 
 ## Wireframe 🚀
 Wireframe de la idea principal del proyecto con funcionalidad:
