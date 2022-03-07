@@ -1,115 +1,115 @@
-# THE CODER'S OFFICE📌
+# THE CODER'S OFFICE 👩‍💻
 
-## Introducción👨‍⚕️ 
+## Introduction 📋
 
-El proyecto "THE CODER'S OFFICE" es una aplicación que permite pedir cita al CTO para resolver problemas técnicos de los equipos de desarrollo. El objetvivo es desarrollar un producto mínimo viable (MVP). Se inicio con código espagueti, en PHP intentando llegar a una aplicación orientada a objetos usando el patrón MVC (Modelo, Vista, Controlador)
+The project "THE CODER'S OFFICE" is an application that allows you to request an appointment with the CTO to solve technical problems of the development teams. \
+The objective is to develop a minimum viable product (MVP) in PHP, and we will try to create an object-oriented application using the MVC (Model-View-Controller) pattern.
 
-### Objetivos de la práctica🛫 
+## Structure 🧬
 
-  1.- Entender el patrón MVC (Model, View, Controller).
-  2.- Investigar sobre Bootstrap Framework.
-  3.- Introducirnos a las bases de datos relacionales & SQL.
-  4.- Entender componentes de vistas y conceptos en PHP.
-  5.- Introducirnos en el Refactoring.
-  6.- Comenzar con composer y autoload.
-  7.- Una intro al *router* como componente de los frameworks MVC
+### The application will consist of at least 3 pages:
 
-## Estructura 📚 
-- La aplicación constará de al menos 3 páginas
+- One page for the list with all scheduled appointments
+- A second page with a form to create a new appointment
+- A third page to edit a specific appointment
 
-    - Una página para la lista con todas las citas previstas.
-    - Una página con un formulario para crear una nueva cita.
-    - Una página para editar una cita concreta.
+### Appointment List:
 
--  Lista de citas:
+- Appointments should appear in order of creation with:
+  - The name of the coder or team
+  - The subject of the query
+  - Date and time of creation of the appointment.
+  - Appointments can be deleted
+  - We can access the edition of each appointment, and the page for creating a new appointment
 
-    - Lista: Las citas deben aparecer por orden de creación con:
-    - El nombre del coder o del equipo.
-    - El tema de consulta
-    - Fecha y hora de la creación de la cita
-    - Las citas se podrán eliminar.
-    - Podremos acceder a la edición de cada cita, y a la página de creación de una cita nueva.
+### Create new appointment:
 
-- Crear nueva cita:
+- Form with the required fields
+- Button to clear fields
+- Button to cancel and return to the main list
+- Button to send the information
 
-    - Formulario con los campos necesarios obligatorios
-    - Botón para borrar los campos
-    - Botón para cancelar y volver a la lista principal
-    - Botón para enviar la información
+### Edit appointment:
 
-- Editar cita
+- Form with the required fields
+- The fields must have the information of the appointment to be edited
+- Cancel button, Submit button
 
-    - Formulario con los campos necesarios obligatorios.
-    - Los campos deben tener la información de la cita a editar
-    - Botón cancelar, Botón de enviar
+### The application must be responsive
 
-- La aplicación deberá ser responsiva.
+## Core skills 🤸‍♀️
 
-## Starting 🚀
+- HTML semantics
+- Good practices in CSS
+- Capacity of abstraction in classes and objects
+- Design Patterns - Model-View-Controller (MVC)
+- Deploy the application to a production server
+- Development based on user stories and tasks (Kanban)
+
+## Starting ✨
 
 These instructions will allow you to get a working copy of the project on your local computer, for development and testing purposes:
 
 ```
-1. Clone git repository: https://github.com/belcar-ceci/consulting.git
+1. Clone git repository: https://github.com/SolTuripe/consulting.git
 2. Create a database in phpMyAdmin with the name: users
 3. Composer install and/or composer update
 4. $ composer require vlucas/phpdotenv (to create the environment variables)
 ```
 [For more information about PHP Dotenv, setting in environment variables, click here](https://github.com/vlucas/phpdotenv)
 
+## Deploy with Heroku 💻
 
-[To find the project in production click here](https://crada-consulting.herokuapp.com/)
+https://crada-consulting.herokuapp.com/
 
 ## Wireframe 🚀
-Wireframe de la idea principal del proyecto con funcionalidad:
+
+Wireframe of how we think the screens and their functionalities should be
 
 <p align="center"> 
-  <img src="./Readme/wireframe/movil.png?raw=true" width=80%>
-  <img src="./Readme/wireframe/destopk.png?raw=true" width=100%>
+  <img src="./Readme/wireframe/movil.png?raw=true" width=50%>
+  <img src="./Readme/wireframe/destopk.png?raw=true" width=70%>
 </p>
 
+## Desktop version 🚀
 
-
-## Versión Desktop 🚀
 <p align="center"> 
-  <img src="./Readme/Mockup/Landing1.png?raw=true" width=50%>
+  <img src="./Readme/Mockup/Landing1.png?raw=true" width=60%>
 </p>
+
+## Mobile version 🚀
+
 <p align="center"> 
-  <img src="./Readme/Mockup/Landing2.png?raw=true" width=50%>
-</p>
-<p align="center"> 
-  <img src="./Readme/Mockup/Landing3.png?raw=true" width=50%>
+  <img src="./Readme/Mockup/Movilfinal.png?raw=true" width=60%>
 </p>
 
-## Versión Mobile First 🚀
-<p align="center"> 
-  <img src="./Readme/Mockup/Movilfinal.png?raw=true" width=100%>
-</p>
+## Technologies 📋
 
+- PHP - Server scripting language
+- HTML - Markup language for Web pages
+- CSS - Styles
+- BOOSTRAP - Framework to make responsive applications
+- SQL - Data Base
 
-## Dependencias 🧑 
+## Tools 🧰
 
-* Frontend: HTML, CSS, SCSS - Opcional: Framework de CSS.
-* Backend: PHP.
-* Bases de datos: MySQL.
-## Herramientas  🧰 
+- Miro
+- Figma
+- Mockup Ninja
+- Trello
+- Font-face
 
-* Miró
-* Figma
-* Mockup Ninja
-* Trello
-* Font-face
-* Ágile
+## Autors 🌻
 
-## Autores🌻 
-* Sol Turipe.
-* Mayu Ruiz.
-* Cecilia Carbajal.
-* Abdessamad Belkhialat.
-* Miquel Cruz.
-* Clàudia Calero Duró.
+- [Sol Turipe](https://github.com/SolTuripe)
+- [Mayu Ruiz](https://github.com/MayuRuru)
+- [Cecilia Carbajal](https://github.com/belcar-ceci)
+- [Abdessamad Belkhialat](https://github.com/abde7h)
+- [Miquel Cruz](https://github.com/mcc72)
+- [Clàudia Calero Duró](https://github.com/ClaudiaCalero)
 
-## Gratitud 🎁
-* Comenta a otros sobre este proyecto 📢 .
-* Apoya nuestros proyectos 🐈‍⬛.
-* Hecho con  ❤️ por @belcar-ceci  @abde7h👻  @SolTuripe👻 @MayuRuru👻  @mcc72👻 @ClaudiaCalero👻
+## Gratitude 🎁
+
+- Tell others about this project 📢
+- Support our projects ⭐
+- Made with ❤️ 
